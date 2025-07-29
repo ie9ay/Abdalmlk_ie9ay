@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -8,30 +7,59 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background: #f4f4f4;
-      text-align: center;
-      padding: 40px;
+      background: #fdfdfd;
       color: #333;
+      text-align: center;
+      padding: 50px 20px;
     }
+
     h1 {
       margin-bottom: 10px;
-    }
-    p {
-      margin-top: 0;
-      font-size: 18px;
-    }
-    .icons {
-      margin-top: 30px;
-    }
-    .icons a {
-      text-decoration: none;
-      margin: 10px;
       font-size: 32px;
-      color: #333;
-      transition: color 0.3s;
     }
-    .icons a:hover {
-      color: #007BFF;
+
+    p {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .icon-box {
+      background: #f1f1f1;
+      border-radius: 12px;
+      padding: 20px 10px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .icon-box:hover {
+      background: #e0e0e0;
+      transform: translateY(-5px);
+    }
+
+    .icon-box i {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .icon-label {
+      display: block;
+      font-size: 16px;
+      margin-top: 6px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
@@ -40,13 +68,43 @@
   <p>أشعري العقيدة • شافعي المذهب • صوفي المسلك</p>
   <p>أعشق القراءة والكتب، وأحب كل مجاهد في سبيل الله</p>
 
-  <div class="icons">
-    <a href="https://www.instagram.com/ie.9ay" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://t.me/abdalmlkshafay" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-    <a href="https://www.facebook.com/share/17HvKBsQ6b" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-    <a href="https://x.com/ie_9ay" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://www.tiktok.com/@ie.9ay" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-    <a href="https://tellonym.me/ebwd860/1word" target="_blank" title="Tellonym"><i class="fas fa-question-circle"></i></a>
+  <div class="grid">
+    <a href="https://www.instagram.com/ie.9ay" target="_blank">
+      <div class="icon-box">
+        <i class="fab fa-instagram"></i>
+        <span class="icon-label">انستقرام</span>
+      </div>
+    </a>
+    <a href="https://t.me/abdalmlkshafay" target="_blank">
+      <div class="icon-box">
+        <i class="fab fa-telegram"></i>
+        <span class="icon-label">تيليجرام</span>
+      </div>
+    </a>
+    <a href="https://www.facebook.com/share/17HvKBsQ6b" target="_blank">
+      <div class="icon-box">
+        <i class="fab fa-facebook"></i>
+        <span class="icon-label">فيسبوك</span>
+      </div>
+    </a>
+    <a href="https://x.com/ie_9ay" target="_blank">
+      <div class="icon-box">
+        <i class="fab fa-x-twitter"></i>
+        <span class="icon-label">تويتر</span>
+      </div>
+    </a>
+    <a href="https://www.tiktok.com/@ie.9ay" target="_blank">
+      <div class="icon-box">
+        <i class="fab fa-tiktok"></i>
+        <span class="icon-label">تيك توك</span>
+      </div>
+    </a>
+    <a href="https://tellonym.me/ebwd860/1word" target="_blank">
+      <div class="icon-box">
+        <i class="fas fa-question-circle"></i>
+        <span class="icon-label">تيلونيم</span>
+      </div>
+    </a>
   </div>
 </body>
 </html>
